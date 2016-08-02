@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F27366D1D510BAF00917CBA /* FileDownloaderQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F27366C1D510BAF00917CBA /* FileDownloaderQueue.swift */; };
 		1F40B4AC1D4E257500BDA1CA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F40B4AB1D4E257500BDA1CA /* GoogleService-Info.plist */; };
 		1F94D7511D468061001E579E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F94D7501D468061001E579E /* AppDelegate.swift */; };
 		1F94D7531D468061001E579E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F94D7521D468061001E579E /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F27366C1D510BAF00917CBA /* FileDownloaderQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDownloaderQueue.swift; sourceTree = "<group>"; };
 		1F40B4AB1D4E257500BDA1CA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1F94D74D1D468061001E579E /* CacheVideo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CacheVideo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F94D7501D468061001E579E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				1FFB2D981D4915CD0011BB98 /* MessageMediaModel.swift */,
 				1F94D7501D468061001E579E /* AppDelegate.swift */,
 				1F94D7521D468061001E579E /* ViewController.swift */,
+				1F27366C1D510BAF00917CBA /* FileDownloaderQueue.swift */,
 				1F94D7541D468061001E579E /* Main.storyboard */,
 				1F94D7571D468061001E579E /* Assets.xcassets */,
 				1F94D7591D468061001E579E /* LaunchScreen.storyboard */,
@@ -151,6 +154,11 @@
 				TargetAttributes = {
 					1F94D74C1D468061001E579E = {
 						CreatedOnToolsVersion = 7.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -241,6 +249,7 @@
 			files = (
 				1FFB2D9A1D4915CD0011BB98 /* MessageMediaModel.swift in Sources */,
 				1F94D7531D468061001E579E /* ViewController.swift in Sources */,
+				1F27366D1D510BAF00917CBA /* FileDownloaderQueue.swift in Sources */,
 				1F94D7511D468061001E579E /* AppDelegate.swift in Sources */,
 				1FFB2D991D4915CD0011BB98 /* MediaModel.swift in Sources */,
 				1FFB2D9C1D491A790011BB98 /* PlayerCell.swift in Sources */,
